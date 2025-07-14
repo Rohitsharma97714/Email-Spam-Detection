@@ -1,0 +1,169 @@
+/* styles.css */
+
+/* General Styling */
+body {
+     background-image: url('https://example.com/path/to/your/image.jpg'); /* Replace with your image URL */
+     background-size: cover; /* Cover the entire background */
+     background-repeat: no-repeat; /* Prevent repeating */
+     background-position: center; /* Center the image */
+     color: white; /* Optional: Change text color for better visibility */
+     margin: 0; /* Remove default margin */
+     padding: 0; /* Remove default padding */
+ }
+ .main {
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ /* Full-width header and navigation bar */
+ .navbar {
+     position: fixed;
+     
+     left: 0;
+     right: 0;
+     background-color: #333; /* Background color */
+     overflow: hidden;
+     z-index: 1000; /* Ensure it stays above the content */
+     padding: 10px; /* Optional: padding to create space */
+ }
+ 
+ .navbar a {
+     float: left; /* Align links to the left */
+     display: block;
+     color: #f2f2f2; /* Text color (make sure this contrasts with background) */
+     text-align: center;
+     padding: 14px 16px; /* Padding for links */
+     text-decoration: none; /* No underline */
+     transition: 0.3s;
+ }
+ 
+ .navbar a:hover {
+     background-color: #ddd; /* Change background on hover */
+     color: black; /* Change text color on hover */
+ }
+ 
+ /* Add some margin to the top of the content to avoid overlap */
+ .content {
+     margin-top: 60px; /* Adjust based on the navbar height */
+ }
+ 
+ 
+ /* Main Section Styling */
+ .section {
+    overflow: auto;
+     padding-top: 80px; /* Padding around the content */
+     margin: 0; /* Remove margin to ensure it stretches full width */
+     background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background */
+ }
+ .section h2 {
+     color: #007BFF;
+     text-align: center;
+     font-weight: 600;
+     margin-bottom: 30px;
+ }
+ 
+ /* Full-width footer */
+ .footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%; /* Full width */
+     text-align: center;
+     padding: 10px;
+     background-color: #007BFF;
+ }
+ /* Text Area Customization */
+ .stTextArea textarea {
+     background-color: #f2f2f2;
+     color: #333;
+     border-radius: 10px;
+     padding: 15px;
+     font-size: 18px;
+     transition: transform 0.3s, font-size 0.3s;
+ }
+
+ .stTextArea textarea:focus {
+     transform: scale(1.02);
+     box-shadow: 0 0 5px #007BFF;
+ }
+ 
+ /* Button Customization */
+ .stButton button {
+     background-color: #007BFF;
+     color: white;
+     border-radius: 8px;
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     transition: transform 0.2s, background-color 0.2s;
+ }
+ .stButton button:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+ }
+ 
+ /* Result Box Styling */
+ .header-result {
+     font-size: 24px;
+     font-weight: 600;
+     color: #fff;
+     background-color: #007BFF;
+     padding: 10px;
+     border-radius: 5px;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 30px;
+ }
+ 
+ /* Next Steps Section */
+ .next-steps {
+     font-size: 20px;
+     color: #007BFF;
+     margin-top: 30px;
+     background-color: #f0f8ff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+ .next-steps ul {
+     list-style-type: disc;
+     padding-left: 20px;
+ }
+ .next-steps li {
+     margin-bottom: 10px;
+ }
+ .next-steps a {
+     color: #007BFF;
+     text-decoration: none;
+ }
+ .next-steps a:hover {
+     text-decoration: underline;
+ }
+ @media (max-width: 600px) {
+     .navbar {
+         font-size: 14px; /* Smaller font for mobile */
+     }
+     .section {
+         padding: 20px; /* Less padding for mobile */
+     }
+ }
+ 
+ a {
+     text-decoration: none; /* Remove underlines from links */
+     color: black; /* Link color */
+     padding: 10px 20px; /* Padding for links */
+     transition: background-color 0.3s; /* Transition for hover effect */
+ }
+ 
+ a:hover {
+     background-color: #ddd; /* Change background on hover */
+ }
+ .highlighted-text {
+    padding: 10px;
+    background-color: #0d02020c;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+.highlight {
+    background-color: rgb(204, 45, 28);
+    font-weight: bold;
+}
+
